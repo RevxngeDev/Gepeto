@@ -1,0 +1,33 @@
+# Secrets — real values never enter the repo (D-002). Only .env.example is tracked.
+.env
+.env.*
+!.env.example
+*.secret
+*.key
+*.pem
+secrets/
+
+# Persistent memory / runtime data — Gepeto's memory is data, not config.
+# Exact Hermes paths are confirmed and refined when Hermes is installed (Phase 1).
+data/
+memory/
+config/hermes/data/
+*.sqlite
+*.sqlite3
+*.db
+
+# Docker / runtime volumes
+volumes/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# Logs
+*.log
+logs/

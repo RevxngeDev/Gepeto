@@ -1,3 +1,14 @@
+# AI-agent files — NOT published to GitHub (owner's decision, D-007).
+# Context docs and agent-instruction files stay local only. Keep your own backup:
+# a fresh clone will NOT contain these.
+CLAUDE.md
+AGENTS.md
+docs/
+GEPETO_MVP.md
+.claude/
+.cursor/
+.aider*
+
 # Secrets — real values never enter the repo (D-002). Only .env.example is tracked.
 .env
 .env.*
